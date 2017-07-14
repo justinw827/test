@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<html lang="en">
-		<title>Document</title>
-		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
-	</head>
-	<body>
-		<div class='content'>
-  <div class='visible'>
-    <p>
-      Fuck you
-    </p>
-    <ul>
-      <li>Dan !</li>
-      <li>Dave !</li>
-      <li>Becky !</li>
-      <li>everybody !</li>
-    </ul>
-  </div>
-</div>
-	</body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//fonts.googleapis.com/css?family=Roboto:400,500,300' rel='stylesheet' type='text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <section class="buttonPart">
+          <div class="content">
+            <button id="button" onClick="disappear()">GUESS WHAT?</button>
+            <img id="bitmoji" style="visibility:hidden" width="127" height="127" src="uhh.PNG" alt="Oops.">
+            <script>
+              var x = document.getElementById("button");
+              x.addEventListener("click", disappear);
+              var y = document.getElementById("bitmoji");
+              
+              function disappear() {
+                x.style.visibility = "hidden";
+                x.setAttribute("style", "visibility:hidden");
+                y.style.visibility = "inherit";
+              }
+            </script>
+          </div>
+      </section>
+  </body>
 </html>
